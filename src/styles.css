@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../node_modules/materialize-css/dist/css/materialize.css";
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.dropdown-content li > span {
+    color: #1565C0;
+}
+
+[type="checkbox"]:checked + label:before {
+    border-right: 2px solid #1565C0;
+    border-bottom: 2px solid #1565C0;
+}
+
+.card.small {
+    height: 250px;
+}
+
+.card .card-content {
+    padding: 0 20px;
+    border-radius: 0 0 2px 2px;
+}
