@@ -9,20 +9,49 @@ main {
     flex: 1 0 auto;
 }
 
-.dropdown-content li > span {
-    color: #1565C0;
-}
-
-[type="checkbox"]:checked + label:before {
-    border-right: 2px solid #1565C0;
-    border-bottom: 2px solid #1565C0;
-}
-
 .card.small {
     height: 250px;
 }
 
 .card .card-content {
     padding: 0 20px;
-    border-radius: 0 0 2px 2px;
+}
+
+.collection .collection-item.avatar .title {
+    font-size: 18px;
+}
+
+.secondary-content {
+    color: #1565C0;
+}
+
+.collection .collection-item.avatar {
+    padding-left: 85px;
+    margin-bottom: 20px;
+}
+
+.collection .collection-item.avatar .circle {
+    width: 60px;
+    height: 60px;
+}
+
+.collection {
+    border: 0;
+}
+
+.collection .collection-item {
+    border-bottom: 0;
+}
+
+.collection .collection-item:hover {
+    background-color: #E3F2FD;
+}
+
+.switch label input[type=checkbox]:checked + .lever {
+    background-color: #2196f3;
+}
+
+.switch label input[type=checkbox]:checked + .lever:after {
+    background-color: #1761B5;
+    left: 24px;
 }

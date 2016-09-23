@@ -11,8 +11,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ChoiceComponent } from './choice/choice.component';
 import { NewsApiService } from './news-api.service';
+import { LocalStorageService } from './local-storage.service';
 
 import { LimitPipe } from './limit.pipe';
+import { NewsComponent } from './news/news.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { LimitPipe } from './limit.pipe';
     HeaderComponent,
     FooterComponent,
     ChoiceComponent,
-    LimitPipe
+    LimitPipe,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +32,7 @@ import { LimitPipe } from './limit.pipe';
     MaterializeModule,
     routing
   ],
-  providers: [NewsApiService],
+  providers: [NewsApiService, LocalStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

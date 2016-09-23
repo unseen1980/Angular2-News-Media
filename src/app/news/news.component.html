@@ -1,0 +1,25 @@
+<div class="section blue-text text-darken-3">
+  <div class="container">
+    <div class="row">
+      <ul class="collection">
+        <li class="collection-item avatar" *ngFor="let article of articles">
+          <img [src]="imageCheck(article.urlToImage)" alt="" class="circle">
+          <span class="title">
+            <b>
+              <a [href]="article.url" target="_blank">
+                {{article.title}}
+              </a>
+            </b>
+          </span>
+          <p *ngIf="article.author">
+            <i>By {{article.author}}.</i>
+            <br>{{article.description}}
+          </p>
+          <a href="#!" class="secondary-content">
+            <i class="material-icons">share</i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
