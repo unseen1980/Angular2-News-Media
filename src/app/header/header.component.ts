@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute, NavigationStart, RoutesRecognized } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  constructor(private _router: Router) { }
+  hideSettings;
+
+  constructor(private _router: Router,
+    private _route: ActivatedRoute, ) {
+    this._router.events
+      .map(event => event instanceof NavigationStart)
+      .subscribe(() => {
+        this.hideSettings = "/news" !== this._router.url ? true : false;
+      });
+  }
 
   ngOnInit() {
   }

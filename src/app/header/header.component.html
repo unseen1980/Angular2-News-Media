@@ -1,10 +1,10 @@
 <nav>
   <div class="nav-wrapper blue darken-3">
     <div class="container">
-    <a [routerLink]="['/news']" class="brand-logo">Global News Media</a>
-    <ul id="nav-mobile" class="right hide-on-med-and-down">
-      <li><a [routerLink]="['/settings', { data: true }]">Settings</a></li>
-    </ul>
+      <a [routerLink]="['/news']" class="brand-logo">Global News Media</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li [hidden]="hideSettings"><a [routerLink]="['/settings', { data: true }]">Settings</a></li>
+      </ul>
     </div>
   </div>
 </nav>
