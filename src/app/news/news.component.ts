@@ -16,9 +16,7 @@ export class NewsComponent implements OnInit {
       this._newsApiService.fetchArticles(agent)
         .subscribe(
         (res) => {
-          for (let article in res['articles']) {
-            this.articles.push(res['articles'][article]);
-          }
+          this.articles.push(...res['articles']);
         },
         error => console.log('Error!')
         );
