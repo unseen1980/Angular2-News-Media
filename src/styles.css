@@ -10,7 +10,7 @@ main {
 }
 
 .card.small {
-    height: 250px;
+    height: 220px;
 }
 
 .card .card-content {
@@ -47,11 +47,19 @@ main {
     background-color: #E3F2FD;
 }
 
-.switch label input[type=checkbox]:checked + .lever {
+.switch label input[type=checkbox]:checked+.lever {
     background-color: #2196f3;
 }
 
-.switch label input[type=checkbox]:checked + .lever:after {
+.switch label input[type=checkbox]:checked+.lever:after {
     background-color: #1761B5;
     left: 24px;
+}
+
+h5 {
+    font-size: 1.1rem;
+}
+
+.card-content>p {
+    font-size: 0.8em;
 }

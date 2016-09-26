@@ -16,16 +16,16 @@ export class NewsComponent implements OnInit {
       this._newsApiService.fetchArticles(agent)
         .subscribe(
         (res) => {
-          for(var article in res['articles']){
-            this.articles.push(res['articles'][article])
+          for (let article in res['articles']) {
+            this.articles.push(res['articles'][article]);
           }
         },
         error => console.log('Error!')
-        )
-    });    
+        );
+    });
   }
 
-  imageCheck(value){
+  imageCheck(value) {
     return value ? value : 'http://www.icrossanddot.com/wp-content/uploads/news-icon.png';
   }
 
