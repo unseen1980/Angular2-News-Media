@@ -12,7 +12,7 @@ export class NewsComponent implements OnInit {
   constructor(private _newsApiService: NewsApiService, private _localStorageService: LocalStorageService) { }
 
   ngOnInit() {
-    this._localStorageService.getArray('agents').forEach((agent) => {
+    Object.keys(this._localStorageService.getObject('agents')).forEach((agent) => {
       this._newsApiService.fetchArticles(agent)
         .subscribe(
         (res) => {

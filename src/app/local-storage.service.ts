@@ -28,4 +28,11 @@ export class LocalStorageService {
     return JSON.parse(this.localStorage[key] || '[]');
   }
 
+  public setObject(key: string, value: any): void {
+    this.localStorage[key] = JSON.stringify(value);
+  }
+
+  public getObject(key: string): any {
+    return JSON.parse(this.localStorage[key] || '{}');
+  }
 }

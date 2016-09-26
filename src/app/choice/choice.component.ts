@@ -12,7 +12,6 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class ChoiceComponent implements OnInit {
 
   agents = [];
-  selected = [];
   sources = {};
   urlData;
 
@@ -29,12 +28,9 @@ export class ChoiceComponent implements OnInit {
       },
       error => console.log('Error!'));
 
-    this._localStorageService.getArray('agents').forEach((agent) => {
-      this.sources[agent] = true;
-      this.selected.push(agent);
-    });
+    this.sources = this._localStorageService.getObject('agents');
 
-    if (this.selected.length > 0) {
+    if (Object.keys(this.sources).length > 0) {
       this._router.navigate(['/news']);
     }
 
@@ -46,14 +42,12 @@ export class ChoiceComponent implements OnInit {
   }
 
   select(value) {
-    if (this.selected.indexOf(value) === -1) {
-      this.selected.push(value);
+    if (!this.sources[value]) {
       this.sources[value] = true;
     } else {
-      this.selected.splice(this.selected.indexOf(value), 1);
       delete this.sources[value];
     }
-    this._localStorageService.setArray('agents', this.selected);
+    this._localStorageService.setObject('agents', this.sources);
   }
 
   goToNews() {
@@ -61,7 +55,7 @@ export class ChoiceComponent implements OnInit {
   }
 
   atLeastOne() {
-    return this.selected.length > 0;
+    return Object.keys(this.sources).length > 0;
   }
 
 }
