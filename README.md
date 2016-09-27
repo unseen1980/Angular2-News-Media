@@ -16,7 +16,7 @@ News from numerous media sources. Built as a proof of concept in Angular 2
 
 # How to run it
 
-1. Install [angular-cli webpack version](https://github.com/angular/angular-cli/blob/master/WEBPACK_UPDATE.md)
+1. Install [angular-cli webpack version](https://github.com/angular/angular-cli)
 2. Clone repository
 3. Npm install
 4. Get an api key from [NewsApi](https://newsapi.org/)
