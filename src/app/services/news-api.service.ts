@@ -10,7 +10,7 @@ export class NewsApiService {
 
   constructor(private http: Http) {
     this.baseUrl = 'https://newsapi.org/v1';
-    this.apiKey = '39677eb4384848699f8f018d5d4beff7';
+    this.apiKey = '';
   }
 
   fetchSources(): Observable<any> {

@@ -7,14 +7,16 @@ import { routing } from './app.routes';
 import { MaterializeModule } from 'angular2-materialize';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { ChoiceComponent } from './choice/choice.component';
-import { NewsApiService } from './news-api.service';
-import { LocalStorageService } from './local-storage.service';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ChoiceComponent } from './components/choice/choice.component';
+import { NewsComponent } from './components/news/news.component';
 
-import { LimitPipe } from './limit.pipe';
-import { NewsComponent } from './news/news.component';
+import { NewsApiService } from './services/news-api.service';
+import { LocalStorageService } from './services/local-storage.service';
+
+import { LimitPipe } from './pipes/limit.pipe';
+
 
 @NgModule({
   declarations: [

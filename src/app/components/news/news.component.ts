@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { NewsApiService } from '../news-api.service';
-import { LocalStorageService } from '../local-storage.service';
+import { NewsApiService } from '../../services/news-api.service';
+import { LocalStorageService } from '../../services/local-storage.service';
 
 @Component({
   selector: 'app-news',
