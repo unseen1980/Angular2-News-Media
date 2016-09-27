@@ -1,31 +1,26 @@
-# Angular2NewsMedia
+# Angular2 News Media
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.15.
+News from numerous media sources. Built as a proof of concept in Angular 2
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+![alt tag](https://raw.githubusercontent.com/unseen1980/Angular2-News-Media/master/Angular2NewsScreenshot.gif)
 
-## Code scaffolding
+# What have been used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+1. Angular 2.0.0 Final
+2. RxJs
+3. Angular Router 3.0.0
+4. Angular-CLI @Webpack
+5. Materialize-css
+6. Angular2-materialize
+7. Localstorage
 
-## Build
+# How to run it
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to Github Pages
-
-Run `ng github-pages:deploy` to deploy to Github Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+1. Install [angular-cli webpack version](https://github.com/angular/angular-cli/blob/master/WEBPACK_UPDATE.md)
+2. Clone repository
+3. Npm install
+4. Get an api key from [NewsApi](https://newsapi.org/)
+5. Update news-api.service.ts with your key from NewsApi.org
+6. Run `ng serve` for a dev server
+7. Navigate to `http://localhost:4200/`
+8. Enjoy! :punch:
