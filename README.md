@@ -24,3 +24,6 @@ News from numerous media sources. Built as a proof of concept in Angular 2
 6. Run `ng serve` for a dev server
 7. Navigate to `http://localhost:4200/`
 8. Enjoy! :punch:
+
+# Demo site
+https://angular2-news-media.firebaseapp.com/
