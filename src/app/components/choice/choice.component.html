@@ -2,7 +2,7 @@
 	<div class="row" id="agents">
 		<form>
 			<div class="row">
-				<div class="col s12 m6 l3" *ngFor="let agent of agents | slice:0:40">
+				<div class="col s12 m6 l3" *ngFor="let agent of agents">
 					<div class="card small">
 						<div class="card-image" style="height:20%">
 							<img style="max-width:20%" [src]="agent.urlsToLogos.small" alt="">
