@@ -27,3 +27,7 @@ News from numerous media sources. Built as a proof of concept in Angular 2
 
 # Demo site
 https://angular2-news-media.firebaseapp.com/
+
+## License
+
+The content of this project is licensed under the [MIT license](http://opensource.org/licenses/mit-license.php).
