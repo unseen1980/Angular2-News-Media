@@ -1,3 +1,5 @@
+## This repository is using a very old version of Angular! It was build in 2016, so the technology has evolved considerably since then. Consider exploring projects that use newer versions of Angular.
+
 # Angular2 News Media
 
 News from numerous media sources. Built as a proof of concept in Angular 2
